@@ -1,0 +1,150 @@
+/* 1. Gradient Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #dbeafe, #fef9c3);
+  color: #222;
+}
+
+/* 2. Header Styling */
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  width: 50px;
+  vertical-align: middle;
+}
+header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 26px;
+  text-transform: uppercase; /* 3. Text Transform */
+  letter-spacing: 2px;       /* 4. Letter Spacing */
+}
+
+/* 5. Navigation Bar */
+nav {
+  background: #2563eb;
+  text-align: center;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+nav a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow; /* 6. Border Bottom Hover */
+}
+
+/* 7. Banner Section with Background Image */
+.banner {
+  background: url("https://images.unsplash.com/photo-1505483531331-fc3cf89fd382") no-repeat center/cover;
+  text-align: center;
+  padding: 60px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+.banner h2 {
+  font-size: 36px;
+}
+.banner p {
+  font-size: 18px;
+  font-style: italic; /* 8. Italic Text */
+}
+
+/* 9. Reservation Form */
+form {
+  width: 60%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in; /* 10. Animation */
+}
+form h3 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+input:focus, select:focus {
+  box-shadow: 0 0 10px #2563eb; /* 11. Input Focus Effect */
+  outline: none;
+}
+
+/* 12. Button */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+.btn:hover {
+  background: #1e40af;
+  transform: scale(1.1); /* 13. Hover Zoom */
+}
+
+/* 14. Table Styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #1e3a8a;
+  color: white;
+}
+tr:nth-child(even) {
+  background: #f3f4f6; /* 15. Alternate Row Color */
+}
+tr:hover {
+  background: #e0f2fe;
+  transition: 0.3s;
+}
+
+/* 16. Footer */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

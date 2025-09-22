@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="https://img.icons8.com/color/96/train.png" alt="Train Logo" class="logo">
+  <h1>Online Train Reservation</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Book Ticket</a>
+  <a href="#">My Reservations</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="banner">
+  <h2>Book Your Train Tickets Easily!</h2>
+  <p>Safe • Fast • Reliable</p>
+</section>
+
+<form id="reserveForm">
+  <h3>Reservation Form</h3>
+
+  <label for="from">From Station</label>
+  <input type="text" id="from" placeholder="Enter source station">
+
+  <label for="to">To Station</label>
+  <input type="text" id="to" placeholder="Enter destination station">
+
+  <label for="date">Journey Date</label>
+  <input type="date" id="date">
+
+  <label for="class">Class</label>
+  <select id="class">
+    <option>Sleeper</option>
+    <option>AC Chair Car</option>
+    <option>AC 2 Tier</option>
+    <option>AC 3 Tier</option>
+  </select>
+
+  <label for="passengers">Number of Passengers</label>
+  <input type="number" id="passengers" min="1" max="6" value="1">
+
+  <button type="button" class="btn" onclick="reserve()">Reserve Ticket</button>
+</form>
+
+<section class="trains">
+  <h2>Available Trains</h2>
+  <table id="trainTable">
+    <tr>
+      <th>Train No</th>
+      <th>Train Name</th>
+      <th>Departure</th>
+      <th>Arrival</th>
+    </tr>
+    <tr>
+      <td>12627</td>
+      <td>Karnataka Express</td>
+      <td>08:30</td>
+      <td>21:45</td>
+    </tr>
+    <tr>
+      <td>12028</td>
+      <td>Shatabdi Express</td>
+      <td>06:00</td>
+      <td>12:30</td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  <p>&copy; 2025 Indian Railways Reservation Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
